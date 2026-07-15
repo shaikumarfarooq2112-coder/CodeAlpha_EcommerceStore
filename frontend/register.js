@@ -1,38 +1,42 @@
-function register(){
+document.getElementById("registerForm").addEventListener("submit", register);
 
-let name=document.getElementById("name").value;
-let email=document.getElementById("email").value;
-let password=document.getElementById("password").value;
+function register(event) {
 
+    event.preventDefault();
 
-fetch("http://localhost:3000/register",
-{
-method:"POST",
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
-headers:{
-"Content-Type":"application/json"
-},
+    fetch("http://localhost:3000/register", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            password: password
+        })
+    })
 
-body:JSON.stringify({
+    .then(res => res.json())
 
-name:name,
-email:email,
-password:password
+    .then(data => {
 
-})
+        alert(data.message);
 
-})
+        if(data.message === "Registration Successful!"){
+            window.location.href = "login.html";
+        }
 
+    })
 
-.then(res=>res.json())
+    .catch(error => {
 
-.then(data=>{
+        console.log(error);
+        alert("Server is not running!");
 
-alert(data.message);
-
-window.location.href="login.html";
-
-});
-
+    });
 
 }

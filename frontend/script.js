@@ -63,54 +63,38 @@ console.log(error);
 
 function searchProducts(){
 
-
-let input = document
-.getElementById("searchInput")
-.value
-.toLowerCase();
-
+    let input = document
+    .getElementById("searchInput")
+    .value
+    .toLowerCase();
 
 
-let cards=document
-.getElementsByClassName("product-card");
+    let products = document
+    .getElementsByClassName("product-card");
 
 
+    for(let i=0;i<products.length;i++){
 
-for(let i=0;i<cards.length;i++){
-
-
-let name =
-cards[i]
-.querySelector("h2")
-.innerText
-.toLowerCase();
+        let name = products[i]
+        .querySelector("h2")
+        .innerText
+        .toLowerCase();
 
 
+        if(name.includes(input)){
 
-if(name.includes(input)){
+            products[i].style.display="block";
 
+        }
+        else{
 
-cards[i].style.display="block";
+            products[i].style.display="none";
 
+        }
 
-}
-
-else{
-
-
-cards[i].style.display="none";
-
+    }
 
 }
-
-
-
-}
-
-
-
-}
-
 
 
 // ================= CATEGORY FILTER =================
