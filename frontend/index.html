@@ -2,215 +2,393 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Book Store</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online E-Commerce Store</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar">
+<!-- NAVBAR -->
 
-        <div class="logo">
-            📚 Book Store
-        </div>
+<nav class="navbar">
 
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
-            <a href="cart.html">Cart</a>
-        </div>
+<div class="logo">
+🛒 ShopSphere Store
+</div>
 
-    </nav>
 
-    <!-- ================= HERO SECTION ================= -->
+<div class="menu">
 
-    <section class="hero">
+<a href="index.html">Home</a>
 
-        <h1>Welcome to Online Book Store</h1>
+<a href="register.html">Register</a>
 
-        <p>
-            Discover the best programming books to learn
-            Python, Java, React, HTML, CSS, JavaScript,
-            Node.js, Express.js and MongoDB.
-        </p>
+<a href="login.html">Login</a>
 
-        <div class="hero-buttons">
+<a href="cart.html">Cart</a>
 
-            <a href="#products">
-                <button>📚 Shop Now</button>
-            </a>
+</div>
 
-            <a href="cart.html">
-                <button>🛒 View Cart</button>
-            </a>
 
-        </div>
+</nav>
 
-    </section>
 
-    <!-- ================= PRODUCTS ================= -->
 
-    <section>
+<!-- HERO SECTION -->
 
-        <h2 class="section-title">
-            Featured Programming Books
-        </h2>
 
-        <div class="container" id="products">
+<section class="hero">
 
-            <!-- Book 1 -->
+<div class="hero-content">
 
-            <div class="card">
+<h1>
+Welcome to Online E-Commerce Store
+</h1>
 
-                <img src="images/python.jpg" alt="Python Book">
+<p>
+Discover premium electronics including
+Laptops, Smartphones, Smart Watches and Accessories.
+Shop the latest technology products at the best prices.
+</p>
 
-                <h2>
-                    <a href="product.html">Python Book</a>
-                </h2>
 
-                <p class="price">₹500</p>
+<div class="hero-buttons">
 
-                <button onclick="addToCart('Python Book',500)">
-                    Add To Cart
-                </button>
+<a href="#products">
+<button>
+🛍 Shop Now
+</button>
+</a>
 
-            </div>
 
-            <!-- Book 2 -->
+<a href="cart.html">
+<button>
+🛒 View Cart
+</button>
+</a>
 
-            <div class="card">
 
-                <img src="images/java.jpg" alt="Java Book">
+</div>
 
-                <h2>Java Book</h2>
+</div>
 
-                <p class="price">₹400</p>
+</section>
 
-                <button onclick="addToCart('Java Book',400)">
-                    Add To Cart
-                </button>
 
-            </div>
 
-            <!-- Book 3 -->
+<!-- PRODUCTS -->
 
-            <div class="card">
 
-                <img src="images/react.jpg" alt="React Book">
+<section>
 
-                <h2>React Book</h2>
 
-                <p class="price">₹600</p>
+<h2 class="section-title">
 
-                <button onclick="addToCart('React Book',600)">
-                    Add To Cart
-                </button>
+Featured Products
 
-            </div>
+</h2>
 
-            <!-- Book 4 -->
 
-            <div class="card">
 
-                <img src="images/javascript.jpg" alt="JavaScript Book">
+<div class="container" id="products">
 
-                <h2>JavaScript Book</h2>
 
-                <p class="price">₹550</p>
 
-                <button onclick="addToCart('JavaScript Book',550)">
-                    Add To Cart
-                </button>
+<!-- PRODUCT 1 -->
 
-            </div>
+<div class="card">
 
-            <!-- Book 5 -->
 
-            <div class="card">
+<img src="images/Bluetooth Speaker.jpg" 
+alt="Bluetooth Speaker">
 
-                <img src="images/html.png" alt="HTML & CSS Book">
 
-                <h2>HTML & CSS Book</h2>
+<h2>
+Bluetooth Speaker
+</h2>
 
-                <p class="price">₹350</p>
 
-                <button onclick="addToCart('HTML & CSS Book',350)">
-                    Add To Cart
-                </button>
+<p class="price">
+₹1500
+</p>
 
-            </div>
 
-            <!-- Book 6 -->
+<button onclick="addToCart('Bluetooth Speaker',1500)">
+Add To Cart
+</button>
 
-            <div class="card">
 
-                <img src="images/node.png" alt="Node.js Book">
+</div>
 
-                <h2>Node.js Book</h2>
 
-                <p class="price">₹650</p>
 
-                <button onclick="addToCart('Node.js Book',650)">
-                    Add To Cart
-                </button>
 
-            </div>
 
-            <!-- Book 7 -->
+<!-- PRODUCT 2 -->
 
-            <div class="card">
 
-                <img src="images/express.webp" alt="Express.js Book">
+<div class="card">
 
-                <h2>Express.js Book</h2>
 
-                <p class="price">₹700</p>
+<img src="images/Camera.jpg"
+alt="Camera">
 
-                <button onclick="addToCart('Express.js Book',700)">
-                    Add To Cart
-                </button>
 
-            </div>
+<h2>
+Camera
+</h2>
 
-            <!-- Book 8 -->
 
-            <div class="card">
+<p class="price">
+₹25000
+</p>
 
-                <img src="images/mongodb.png" alt="MongoDB Book">
 
-                <h2>MongoDB Book</h2>
+<button onclick="addToCart('Camera',25000)">
+Add To Cart
+</button>
 
-                <p class="price">₹750</p>
 
-                <button onclick="addToCart('MongoDB Book',750)">
-                    Add To Cart
-                </button>
+</div>
 
-            </div>
 
-        </div>
 
-    </section>
 
-    <!-- ================= FOOTER ================= -->
 
-    <footer>
+<!-- PRODUCT 3 -->
 
-        <p><strong>© 2026 Online Book Store</strong></p>
 
-        <p>Developed by <strong>Shaik Shaheena</strong></p>
+<div class="card">
 
-        <p>Full Stack Development Internship - CodeAlpha</p>
 
-    </footer>
+<img src="images/Gaming Mouse.jpg"
+alt="Gaming Mouse">
 
 
+<h2>
+Gaming Mouse
+</h2>
+
+
+<p class="price">
+₹1200
+</p>
+
+
+<button onclick="addToCart('Gaming Mouse',1200)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- PRODUCT 4 -->
+
+
+<div class="card">
+
+
+<img src="images/Keyboard.jpg"
+alt="Keyboard">
+
+
+<h2>
+Keyboard
+</h2>
+
+
+<p class="price">
+₹2000
+</p>
+
+
+<button onclick="addToCart('Keyboard',2000)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- PRODUCT 5 -->
+
+
+<div class="card">
+
+
+<img src="images/Laptop.jpg"
+alt="Laptop">
+
+
+<h2>
+Laptop
+</h2>
+
+
+<p class="price">
+₹55000
+</p>
+
+
+<button onclick="addToCart('Laptop',55000)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PRODUCT 6 -->
+
+
+<div class="card">
+
+
+<img src="images/Smart Watch.jpg"
+alt="Smart Watch">
+
+
+<h2>
+Smart Watch
+</h2>
+
+
+<p class="price">
+₹3000
+</p>
+
+
+<button onclick="addToCart('Smart Watch',3000)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- PRODUCT 7 -->
+
+
+<div class="card">
+
+
+<img src="images/Smartphone.jpg"
+alt="Smartphone">
+
+
+<h2>
+Smartphone
+</h2>
+
+
+<p class="price">
+₹20000
+</p>
+
+
+<button onclick="addToCart('Smartphone',20000)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PRODUCT 8 -->
+
+
+<div class="card">
+
+
+<img src="images/Wireless Headphones.jpg"
+alt="Wireless Headphones">
+
+
+<h2>
+Wireless Headphones
+</h2>
+
+
+<p class="price">
+₹3500
+</p>
+
+
+<button onclick="addToCart('Wireless Headphones',3500)">
+Add To Cart
+</button>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<p>
+<strong>© 2026 Online E-Commerce Store</strong>
+</p>
+
+
+<p>
+Developed by <strong>Shaik Shaheena</strong>
+</p>
+
+
+<p>
+Full Stack Development Internship - CodeAlpha
+</p>
+
+
+</footer>
 
 
 
@@ -219,5 +397,6 @@
 
 
 </body>
+
 
 </html>
