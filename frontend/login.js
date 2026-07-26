@@ -7,7 +7,7 @@ function login(event) {
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    fetch("https://shadowfox-production.up.railway.app/", {
+    fetch("http://localhost:3000/login", {
 
         method: "POST",
 
@@ -26,11 +26,15 @@ function login(event) {
 
     .then(data => {
 
-        alert(data.message);
-
         if (data.message === "Login Successful!") {
 
+            alert("Login Successful!");
+
             window.location.href = "index.html";
+
+        } else {
+
+            alert(data.message);
 
         }
 
@@ -38,9 +42,9 @@ function login(event) {
 
     .catch(error => {
 
-        console.error(error);
+        console.error("Login Error:", error);
 
-        alert("Login failed. Make sure the backend server is running.");
+        alert("Unable to connect to the backend server.");
 
     });
 
