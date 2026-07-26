@@ -174,27 +174,35 @@ Run the frontend using **Live Server** in Visual Studio Code.
 
 # 📸 Screenshots
 
+
 ## 🏠 Home Page
 
-(Add your homepage screenshot here)
+![Home Page](screenshots/home.png)
+
 
 
 ## 🛍️ Products Section
 
-(Add your product section screenshot here)
+![Products Section](screenshots/products.png)
+
 
 
 ## 🛒 Cart Page
 
-(Add your cart screenshot here)
+![Cart Page](screenshots/cart.png)
 
 
-## 🔐 Login and Register Pages
 
-(Add authentication screenshots here)
+## 🔐 Login Page
+
+![Login Page](screenshots/login.png)
 
 
----
+
+## 📝 Register Page
+
+![Register Page](screenshots/register.png)
+
 
 # 🚀 Application Workflow
 
