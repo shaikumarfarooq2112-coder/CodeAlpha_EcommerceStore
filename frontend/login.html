@@ -1,40 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Login Page</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere | Login</title>
+
     <link rel="stylesheet" href="login.css">
+
 </head>
+
 <body>
 
-<form id="loginForm">
+    <div class="container">
 
-    <h1>Login</h1>
+        <form id="loginForm">
 
-    <label>Email:</label><br>
-    <input
-        type="email"
-        id="email"
-        placeholder="Enter Email"
-        required>
+            <h1>Login</h1>
 
-    <br><br>
+            <p>Welcome Back!</p>
 
-    <label>Password:</label><br>
-    <input
-        type="password"
-        id="password"
-        placeholder="Enter Password"
-        required>
+            <label>Email</label>
 
-    <br><br>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                required
+            >
 
-    <button type="submit">
-        Login
-    </button>
+            <label>Password</label>
 
-</form>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                required
+            >
 
-<script src="login.js"></script>
+            <button type="submit">
+                Login
+            </button>
+
+            <p>
+                Don't have an account?
+                <a href="register.html">Register Here</a>
+            </p>
+
+        </form>
+
+    </div>
+
+    <script src="login.js"></script>
 
 </body>
+
 </html>
