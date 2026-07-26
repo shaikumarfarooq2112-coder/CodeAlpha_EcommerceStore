@@ -114,3 +114,140 @@ footer {
 footer p {
     margin: 5px 0;
 }
+/* ================= HERO SECTION ================= */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    color:white;
+}
+
+.hero h1{
+    color:white;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.hero-buttons button{
+    margin:10px;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title{
+    text-align:center;
+    font-size:34px;
+    color:#1e3a8a;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
+/* ================= PRODUCT CARDS ================= */
+
+.card{
+    width:260px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.card h2{
+    font-size:22px;
+}
+
+.price{
+    color:#16a34a;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* ================= BUTTON ================= */
+
+button{
+    font-weight:bold;
+    letter-spacing:.5px;
+}
+
+button:hover{
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.menu a{
+    transition:.3s;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#ffd54f;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    padding:35px;
+}
+
+footer p{
+    font-size:17px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.container{
+    padding:20px;
+}
+
+.card{
+    width:90%;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+.menu{
+    margin-top:15px;
+}
+
+.menu a{
+    margin:10px;
+}
+
+}
